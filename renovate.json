@@ -1,0 +1,19 @@
+{
+  "extends": ["config:base"],
+  "ignorePaths": [],
+  "conda": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "packagePatterns": ["*"],
+      "enabled": false
+    },
+    {
+      "enabled": true,
+      "enabledManagers": ["conda"],
+      "paths": ["src/envs/*.yaml"],
+      "automerge": false,
+    }
+  ]
+}
