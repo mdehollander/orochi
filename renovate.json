@@ -13,7 +13,7 @@
       "enabled": true,
       "enabledManagers": ["conda"],
       "paths": ["src/envs/*.yaml"],
-      "automerge": false,
+      "automerge": false
     }
   ]
 }
