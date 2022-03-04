@@ -12,7 +12,7 @@
     {
       "description": "Upgrade conde dependencies",
       "fileMatch": [
-        "./src/envs/\\w+.yaml$"
+        "\\./src/envs/\\w+.yaml$"
       ],
       "matchStrings": [
         "# renovate datasource=conda\\sdepName=(?<depName>.*?)\\s+- [a-z0-9]+==\"?(?<currentValue>.*)\"?"
