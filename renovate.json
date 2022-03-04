@@ -1,19 +1,23 @@
 {
-  "extends": ["config:base"],
+  "extends": [
+    "config:base"
+  ],
   "ignorePaths": [],
-  "conda": {
-    "enabled": true
-  },
-  "packageRules": [
+  "reviewersFromCodeOwners": "true",
+  "labels": [
+    "renovate",
+    "dependencies"
+  ],
+  "regexManagers": [
     {
-      "packagePatterns": ["*"],
-      "enabled": false
-    },
-    {
-      "enabled": true,
-      "enabledManagers": ["conda"],
-      "paths": ["src/envs/*.yaml"],
-      "automerge": false
+      "description": "Upgrade conde dependencies",
+      "fileMatch": [
+        "src/envs/*.yaml"
+      ],
+      "matchStrings": [
+        "# renovate datasource=conda\\sdepName=(?<depName>.*?)\\s+- [a-z0-9]+==\"?(?<currentValue>.*)\"?"
+      ],
+      "datasourceTemplate": "conda"
     }
   ]
 }
