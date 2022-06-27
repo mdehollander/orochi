@@ -1,4 +1,5 @@
 channels:
   - bioconda
 dependencies:
-  - megahit
+  # renovate datasource=conda depName=bioconda/megahit
+  - megahit==1.2.9

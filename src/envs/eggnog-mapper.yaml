@@ -1,4 +1,5 @@
 channels:
   - bioconda
 dependencies:
+  # renovate datasource=conda depName=bioconda/eggnog-mapper
   - eggnog-mapper==2.0.1
