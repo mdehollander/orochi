@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   # renovate datasource=conda depName=bioconda/antismash
-  - antismash==6.0.1
+  - antismash==6.1.1
   # renovate datasource=conda depName=bioconda/biopython
   - biopython==1.78
   - numpy==1.19.4
