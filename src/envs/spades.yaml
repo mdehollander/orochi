@@ -2,4 +2,4 @@ channels:
   - bioconda
 dependencies:
   # renovate datasource=conda depName=bioconda/spades
-  - spades==3.14.0
+  - spades
