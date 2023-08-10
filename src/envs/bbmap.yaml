@@ -2,5 +2,5 @@ channels:
   - bioconda
 dependencies:
   # renovate datasource=conda depName=bioconda/bbmap
-  - bbmap==38.90
+  - bbmap==38.99
 
