@@ -2,4 +2,4 @@ channels:
   - bioconda
 dependencies:
   # renovate datasource=conda depName=bioconda/vsearch
-  - vsearch==2.0.3
+  - vsearch==2.30.0
